@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Segundo Parcial</title>
+    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <script src="./js/scripts.js" type="module" defer></script>
+
+</head>
+
+<body>
+
+    <section class="container-fluid p-0">
+        <header>
+            <a class="navbar-brand" href="./index.html"><img src="./assets/logo.jpg" width="200px" alt="Logo"></a>
+
+            <nav class="navbar navbar-expand-lg navbar-light text-center">
+                <ul>
+                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="#">Anuncios</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container-fluid text-center heading p-0">
+            <h1 class="h1">Administración</h1>
+            <img src="./assets/consecionaria.jpg" alt="Imagen de la concesionaria de autos" width="100%">
+        </div>
+    </section>
+
+
+    <!-- Sec 2 -->
+    <div class="container pt-3 pb-3">
+
+        <div class="row">
+            <div class="col">
+                <form>
+                    <!-- ID -->
+                    <div class="form-group row justify-content-center">
+                        <input type="hidden" name="id" />
+                    </div>
+
+                    <div class="form-group row justify-content-center">
+                        <!-- Titulo -->
+                        <label class="col-sm-4 col-lg-2 col-form-label" for="titulo">TITULO:</label><br />
+
+                        <div class="col-sm-8 col-lg-5">
+                            <input class="form-control" type="text" id="titulo" name="titulo" placeholder="Titulo" required />
+                        </div>
+                    </div>
+
+
+
+                    <!-- Transaccion -->
+                    <div class="form-group row justify-content-center">
+                        <label class="col-sm-4 col-md-4 col-lg-2 col-form-label" for="transaccion">TRASNSACCION</label>
+                        <div class="col-sm-6 col-md-8 col-lg-5">
+                            <div class="pr-3 custom-control custom-radio custom-control-inline">
+                                <input class="custom-control-input" type="radio" id="radioVenta" name="transaccion" value="Venta" checked>
+                                <label class="custom-control-label" for="radioVenta">VENTA</label>
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">
+                                <input class="custom-control-input" type="radio" id="radioAlquiler" name="transaccion" value="Alquiler">
+                                <label class="custom-control-label" for="radioAlquiler">ALQUILER</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DESCRIPCION -->
+                    <div class="form-group row justify-content-center pb-3">
+                        <label class="col-sm-4 col-lg-2 col-form-label" for="descripcion">DESCRIPCION:</label>
+                        <div class="col-sm-8 col-lg-5">
+                            <input class="form-control" type="text" id="descripcion" name="descripcion" placeholder="Descripción" required>
+                        </div>
+                    </div>
+
+                    <!-- PRECIO -->
+                    <div class="form-group row justify-content-center pb-3">
+                        <label class="col-sm-4 col-lg-2 col-form-label" for="precio">PRECIO:</label>
+                        <div class="col-sm-8 col-lg-5">
+                            <input class="form-control" type="number" id="precio" name="precio" min="0" value="0" required>
+                        </div>
+                    </div>
+
+                    <!-- CANTIDAD PUERTAS -->
+                    <div class="form-group row justify-content-center">
+                        <!-- acá va una imagen -->
+                        <label class="icon-form col-sm-4 col-lg-2 col-form-label" for="cantPuertas">
+                            <img src="./assets/puertas.png" alt="Imagen puertas del auto" width="35px">
+                        </label>
+                        <div class="col-sm-8 col-lg-5">
+                            <input class="form-control" type="number" id="cantPuertas" name="cantPuertas" min="3" max="5" placeholder="Puertas" required>
+                        </div>
+                    </div>
+
+                    <!-- CANTIDAD KMS -->
+                    <div class="form-group row justify-content-center">
+                        <label class="col-sm-4 col-lg-2 col-form-label" for="cantKMS">
+                          <img src="./assets/velocimetro.png" alt="Imagen kms del auto" width="35px">
+                        </label>
+                        <div class="col-sm-8 col-lg-5">
+                            <input class="form-control" type="number" id="cantKMS" name="kms" placeholder="KMs" required>
+                        </div>
+                    </div>
+
+                    <!-- POTENCIA -->
+
+                    <div class="form-group row justify-content-center">
+                        <label class="icon-form col-sm-4 col-lg-2 col-form-label" for="potencia">
+                          <img src="./assets/potencia.png" alt="Imagen cant de potencia" width="25px">
+                         </label>
+                        <div class="col-sm-8 col-lg-5">
+                            <input class="form-control" type="number" id="potencia" name="potencia" placeholder="Potencia" required>
+                        </div>
+                    </div>
+
+                    <div class="pt-3 form-group row justify-content-around">
+                        <div class="row">
+                            <div class="col" id="divAlta">
+                                <!-- Alta -->
+                                <input type="submit" id="btnSubmit" value="Guardar">
+                            </div>
+
+                            <div class="col desaparecer" id="divBaja">
+                                <!-- Baja -->
+                                <input type="button" id="btnEliminar" value="Eliminar" class="oculto" />
+                            </div>
+
+
+                            <div class="col desaparecer" id="divModif">
+                                <!-- Modificacion -->
+                                <input type="button" id="btnModificar" class="oculto" />
+                            </div>
+
+
+                            <div class="col">
+                                <!-- Cancelar -->
+                                <input type="button" id="btnCancelar" class="oculto" value="Cancelar" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Spinner -->
+    <div class="container">
+        <div class="row pb-3 text-center">
+            <div id="spinner-container"></div>
+        </div>
+    </div>
+
+    <!-- Filtros -->
+    <div class="container filtro">
+        <div class="row text-center pb-5">
+            <div class="col-6 pt-3">
+                <div class="dropdown">
+                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        Filtros:
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <button class="dropdown-item" id="btnFiltroTodos" type="button">Todos</button>
+                        <button class="dropdown-item" id="btnFiltroAlquiler" type="button">Alquiler</button>
+                        <button class="dropdown-item" id="btnFiltroVenta" type="button">Venta</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-5">
+                <label class="col-form-label">Promedio</label>
+                <div class="pb-3">
+                    <input class="form-control" type="text" id="txtFiltro" value="N/A" disabled>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Checkboxs -->
+    <div class="container pt-3 text-center">
+        <div class="row">
+            <div class="container pb-3 text-center">
+                <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="cBoxid">
+                        <input class="cBox form-check-input" type="checkbox" id="cBoxid" checked>Id</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="cBoxtitulo">
+                        <input class="cBox form-check-input" type="checkbox" id="cBoxtitulo" checked>Titulo</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="cBoxtransaccion"> <input class="cBox form-check-input" type="checkbox" id="cBoxtransaccion" checked>Transaccion</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="cBoxdescripcion"><input class="cBox form-check-input" type="checkbox" id="cBoxdescripcion" checked>Descripcion</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="cBoxdrecio"><input class="cBox form-check-input" type="checkbox" id="cBoxprecio" checked>Precio</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="cBoxpuertas"><input class="cBox form-check-input" type="checkbox" id="cBoxcantPuertas" checked>Puertas</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="cBoxkms"><input class="cBox form-check-input" type="checkbox" id="cBoxcantKMS" checked>Kms</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <label class="form-check-label" for="cBoxpotencia"><input class="cBox form-check-input" type="checkbox" id="cBoxpotencia" checked>Potencia</label>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+         
+    <!-- Seccion tabla -->
+      <div class="container pb-3">
+
+        <div class="row text-center table-responsive" id="divLista"></div>
+      </div>
+
+    <!-- Footer -->
+    <section class="container-fluid p-0">
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="# ">Nosotros</a></li>
+                    <li><a href="# ">Anuncios</a></li>
+                    <li><a href="# ">Blog</a></li>
+                    <li><a href="# ">Contacto</a></li>
+                </ul>
+            </nav>
+    
+            <p>
+                Todos los derechos reservados 2021 &copy
+            </p>
+        </footer>
+    </section>
+    
+  </body>
+</html>

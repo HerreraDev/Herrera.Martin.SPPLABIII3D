@@ -1,0 +1,166 @@
+/* .container{
+    margin: 0 auto;
+    max-width: 500px;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    
+} */
+
+/* estilo tablas */
+table{
+    border-collapse: collapse;
+}
+
+table, th, td{
+    border: 2px solid black;
+    text-align: center;
+}
+
+th{
+    border: 2px solid black;
+    background-color: lightskyblue;
+}
+
+/* --------------------------------------------------- */
+
+/* estilo form */
+.cboxs{
+    display: inline-block;
+}
+
+.filtro{
+    border: 1px solid black; 
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+form{
+    margin-bottom: 2rem;
+    padding: 8px 16px;
+    border: 2px solid gray;
+}
+
+input{
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: lightskyblue;
+    padding: 4px;
+    width: 100%;
+
+}
+
+button{
+    border: 2px solid black;
+    border-radius: 6px;
+    background-color: lightskyblue;
+    padding: 4px;
+    width: 100%;
+
+}
+
+@media(max-width: 760px){
+    label>img{
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: 2rem;
+    }
+    div{
+        display: inline-block;
+        height: auto;
+        width: 30%;
+    }
+    input[id="potencia"],input[id="cantPuertas"],input[id="cantKMS"]{
+        height: auto;
+        width: 80%;
+    }
+
+}
+
+.oculto{
+    display: none;
+}
+
+
+label{
+    padding: 20px 0px;
+    font-weight: bold;
+
+}
+
+fieldset{
+    align-items: left;
+    border: 2px dashed lightslategray;
+}
+
+#btnSubmit{
+    background-color: green;
+    color: white;
+}
+
+/* --------------------------------------------------- */
+
+h1{
+    text-align: center;
+    color: gray;
+    font-weight: 400;
+}
+
+#spinner-container{
+    width: 100%;
+    align-items: center;
+}
+
+
+/* Header, fotter y nav */
+header{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-color: black;
+    border: 2px solid green;
+    border-radius: 5px;
+    margin: 5px 10px;
+}
+
+@media(min-width: 760px){
+    header, footer{
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    
+}
+
+#img-consecionaria{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 20rem;
+}
+
+footer{
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 5px;
+}
+footer p{
+    color:white;
+}
+
+/* --------------------------------------------------- */

@@ -1,0 +1,84 @@
+{
+  "anuncios": [
+    {
+      "id": 4,
+      "titulo": "testpromi2",
+      "transaccion": "Venta",
+      "descripcion": "testpromise2",
+      "precio": 400,
+      "cantPuertas": 4,
+      "cantKMS": 6,
+      "potencia": 6
+    },
+    {
+      "id": 7,
+      "titulo": "xx",
+      "transaccion": "Venta",
+      "descripcion": "asd",
+      "precio": 3434,
+      "cantPuertas": 3,
+      "cantKMS": 343,
+      "potencia": 34
+    },
+    {
+      "id": 8,
+      "titulo": "x",
+      "transaccion": "Alquiler",
+      "descripcion": "asd",
+      "precio": 4,
+      "cantPuertas": 4,
+      "cantKMS": 4,
+      "potencia": 4
+    },
+    {
+      "id": 9,
+      "titulo": "asd",
+      "transaccion": "Alquiler",
+      "descripcion": "asd",
+      "precio": 4,
+      "cantPuertas": 4,
+      "cantKMS": 4,
+      "potencia": 4
+    },
+    {
+      "id": 10,
+      "titulo": "55",
+      "transaccion": "Venta",
+      "descripcion": "55",
+      "precio": 5,
+      "cantPuertas": 5,
+      "cantKMS": 5,
+      "potencia": 5
+    },
+    {
+      "id": 11,
+      "titulo": "autopromiseedited",
+      "transaccion": "Venta",
+      "descripcion": "ape",
+      "precio": 6,
+      "cantPuertas": 5,
+      "cantKMS": 6,
+      "potencia": 6
+    },
+    {
+      "id": 12,
+      "titulo": "testpromiseedit",
+      "transaccion": "Alquiler",
+      "descripcion": "testpromiseedit",
+      "precio": 600,
+      "cantPuertas": 5,
+      "cantKMS": 5,
+      "potencia": 5
+    },
+    {
+      "id": 13,
+      "titulo": "testa",
+      "transaccion": "Alquiler",
+      "descripcion": "testa",
+      "precio": 44444,
+      "cantPuertas": 4,
+      "cantKMS": 4,
+      "potencia": 4
+    }
+  ]
+}
